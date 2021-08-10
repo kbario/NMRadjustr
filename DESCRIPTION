@@ -1,16 +1,21 @@
 Package: NMRadjustr
-Title: What the Package Does (One Line, Title Case)
+Title: Adjusts the Number of Scans an NMR Performs Based on the Concentration of a Sample
 Version: 0.0.0.9000
 Authors@R: 
-    person(given = "First",
-           family = "Last",
+    person(given = "Kyle",
+           family = "Bario",
            role = c("aut", "cre"),
-           email = "first.last@example.com",
+           email = "kylebario1@gmail.com",
            comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+Description: Variable sample dilutions in NMR spectroscopy makes spectral comparison tricky. By adjusting the number of scans performed by an NMR based on the dilution of the sample can account for these dilution effects and make the data analysis more robust and accurate.
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Imports: 
+    stats,
+    ptw
