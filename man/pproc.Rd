@@ -8,6 +8,8 @@ pproc(x, p)
 }
 \arguments{
 \item{x}{The spectra that you are processing}
+
+\item{p}{The ppm matched to your spectra}
 }
 \value{
 This function returns a fully preprocessed spectra ready for it's dilution to be estimated
