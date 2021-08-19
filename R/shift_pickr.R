@@ -16,8 +16,7 @@ shift_pickr <- function(x, p, sh, pm = 0.005){
   } else {
     i <- get_idx(sh, p)
   }
-  xt <- x[1,]
-  m <- unname(which(xt==max(xt[i])))
+  m <- unname(which(x==max(x[i])))
   s <- get_idx(c(p[m]-pm,p[m]+pm), p)
   return(s)
 }

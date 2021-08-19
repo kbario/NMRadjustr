@@ -24,5 +24,5 @@ crea <- function(x, p, n, c3 = c(3,3.1), c4 = c(4,4.1)){
   lo <- (2/3)-er
   up <- (2/3)+er
   e <- as.array(r<=up & r>=lo)
-  return(a*2)
+  return(a)
 }
