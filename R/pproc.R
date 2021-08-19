@@ -18,7 +18,7 @@ pproc <- function(x, p){
   xr <- xf[-c(get_idx(c(min(p), 0.25), p), get_idx(c(4.6,4.9), p), get_idx(c(5.55,6), p))]
   pn <- p[-c(get_idx(c(min(p), 0.25), p), get_idx(c(4.6,4.9), p), get_idx(c(5.55,6), p), get_idx(c(9.5,max(p)), p))]
   xb <- bl_(xr)
-  xg <- xb[-get_idx(c(9.5,max(p)), p)]
+  xg <- xb[,-get_idx(c(9.5,max(p)), p)]
   assign('x', xg, envir = .GlobalEnv)
   assign('p', pn, envir = .GlobalEnv)
   assign('o', x_og, envir = .GlobalEnv)
