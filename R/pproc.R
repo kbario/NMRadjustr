@@ -5,9 +5,9 @@
 #'
 #' @return This function returns:
 #' \itemize{
-#'   \item **X**: a fully preprocessed spectrum ready for it's dilution to be estimated
+#'   \item **x**: a fully preprocessed spectrum ready for it's dilution to be estimated
 #'   \item **ppm**: the matched ppm variable for the preprocessed x
-#'   \item **X_OG**: the original X spectra, only processed by the NMR
+#'   \item **x_og**: the original X spectra, only processed by the NMR
 #' @export
 #'
 #' @example pproc(x,p)
