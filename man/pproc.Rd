@@ -12,7 +12,11 @@ pproc(x, p)
 \item{p}{The ppm matched to your spectra}
 }
 \value{
-This function returns a fully preprocessed spectra ready for it's dilution to be estimated
+This function returns:
+\itemize{
+\item \strong{X}: a fully preprocessed spectrum ready for it's dilution to be estimated
+\item \strong{ppm}: the matched ppm variable for the preprocessed x
+\item \strong{X_OG}: the original X spectra, only processed by the NMR
 }
 \description{
 Spectral Preprocessing

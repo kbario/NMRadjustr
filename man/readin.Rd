@@ -4,27 +4,10 @@
 \alias{readin}
 \title{Import 1D NMR spectra}
 \usage{
-readin(
-  path,
-  exp_type = list(exp = c("PROF_URINE_NOESY")),
-  n_max = 1000,
-  filter = TRUE,
-  recursive = TRUE,
-  verbose = TRUE
-)
+readin(path)
 }
 \arguments{
 \item{path}{Given as a string, the path to the overarching files containing the NMR spectrum.}
-
-\item{exp_type}{Defines the name of the experiment used to acquire the NMR. is given in the format: exp_type = list(exp = c("\emph{insert experiment name here}").}
-
-\item{n_max}{Default = 1000}
-
-\item{filter}{Default = TRUE}
-
-\item{recursive}{Default = TRUE}
-
-\item{verbose}{Default = TRUE}
 }
 \value{
 The function exports the following three objects into the currently active R environment (no variable assignments needed):
