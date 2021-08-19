@@ -20,7 +20,7 @@ pproc <- function(x, p){
   xb <- bl_(xr)
   xg <- xb[-get_idx(c(9.5,max(p)), p)]
   assign('x', xg, envir = .GlobalEnv)
-  assign('ppm', pn, envir = .GlobalEnv)
-  assign('x_og', x_og, envir = .GlobalEnv)
-  assign('noi', n, envir = .GlobalEnv)
+  assign('p', pn, envir = .GlobalEnv)
+  assign('o', x_og, envir = .GlobalEnv)
+  assign('n', n, envir = .GlobalEnv)
 }
