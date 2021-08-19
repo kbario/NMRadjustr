@@ -30,8 +30,8 @@ readin <- function(path) {
     offset <- meta$p_OFFSET
     ppm <- seq(from = offset, to = (offset - swp), by = -dppm)
     assign("x", spec, envir = .GlobalEnv)
-    assign("ppm", ppm, envir = .GlobalEnv)
-    assign("meta", meta, envir = .GlobalEnv)
+    assign("p", ppm, envir = .GlobalEnv)
+    assign("m", meta, envir = .GlobalEnv)
   }else{
     return(NULL)
   }

@@ -15,10 +15,11 @@ pproc <- function(x, p){
   xf <- flip_(x, p, c(3,3.1))
   x_og <- xf
   n <- noi_(x,p)
-  xr <- xf[-c(get_idx(c(min(p), 0.25), p), get_idx(c(4.6,4.9), p), get_idx(c(5.55,6), p), get_idx(c(9.5,max(p)), p))]
+  xr <- xf[-c(get_idx(c(min(p), 0.25), p), get_idx(c(4.6,4.9), p), get_idx(c(5.55,6), p))]
   pn <- p[-c(get_idx(c(min(p), 0.25), p), get_idx(c(4.6,4.9), p), get_idx(c(5.55,6), p), get_idx(c(9.5,max(p)), p))]
   xb <- bl_(xr)
-  assign('x', xb, envir = .GlobalEnv)
+  xg <- xb[-get_idx(c(9.5,max(p)), p)]
+  assign('x', xg, envir = .GlobalEnv)
   assign('p', pn, envir = .GlobalEnv)
   assign('x_og', x_og, envir = .GlobalEnv)
   assign('noi', n, envir = .GlobalEnv)
