@@ -9,14 +9,14 @@ citra(x, p, n, sh = c(5.2, 5.3))
 \arguments{
 \item{x}{The spectrum of which you want to calculate the total area}
 
+\item{p}{The matched ppm variable to x}
+
 \item{n}{The noise estimation from the pproc}
 
 \item{sh}{The ppm lower and upper limits defining the cirtate signal}
-
-\item{ppm}{The matched ppm variable to x}
 }
 \value{
-
+An estimated value of the citrate area
 }
 \description{
 Citrate Area Estimation

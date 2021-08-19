@@ -1,12 +1,12 @@
 #' Creatinine Area Estimator
 #'
 #' @param x The spectrum of which you want to calculate the total area
-#' @param ppm The matched ppm variable to x
+#' @param p The matched ppm variable to x
 #' @param n The noise estimation from the pproc
 #' @param c3 The ppm lower and upper limits defining the creatinine signal at ppm 3
 #' @param c4 The ppm lower and upper limits defining the creatinine signal at ppm 4
 #'
-#' @return
+#' @return An estimated value for the creatinine area
 #' @export
 #'
 #' @examples

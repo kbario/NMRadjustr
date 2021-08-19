@@ -1,11 +1,11 @@
 #' Citrate Area Estimation
 #'
 #' @param x The spectrum of which you want to calculate the total area
-#' @param ppm The matched ppm variable to x
+#' @param p The matched ppm variable to x
 #' @param n The noise estimation from the pproc
 #' @param sh The ppm lower and upper limits defining the cirtate signal
 #'
-#' @return
+#' @return An estimated value of the citrate area
 #' @export
 #'
 #' @examples

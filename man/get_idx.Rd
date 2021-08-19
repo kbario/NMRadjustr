@@ -7,12 +7,12 @@
 get_idx(r, p)
 }
 \arguments{
-\item{range}{the lower and upper bounds of the ppm region you wish to find the indexes of}
+\item{r}{the lower and upper bounds of the ppm region you wish to find the indexes of}
 
-\item{ppm}{the ppm variable you want to find the indexes of}
+\item{p}{the ppm variable you want to find the indexes of}
 }
 \value{
-an array containing the indexes between the lower and upper bounds
+An array containing the indexes between the lower and upper bounds
 }
 \description{
 Get ppm indexes

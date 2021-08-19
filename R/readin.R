@@ -12,8 +12,6 @@
 #' @export
 #' @author Torben Kimhofer \email{torben.kimhofer@@murdoch.edu.au}
 #' @examples
-#' path<-system.file('extdata/',  package = 'metabom8')
-#' read1d(path,  exp_type=list(pulprog='noesygppr1d'))
 #' @return
 #' @section
 

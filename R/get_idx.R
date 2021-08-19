@@ -1,9 +1,9 @@
 #' Get ppm indexes
 #'
-#' @param range the lower and upper bounds of the ppm region you wish to find the indexes of
-#' @param ppm the ppm variable you want to find the indexes of
+#' @param r the lower and upper bounds of the ppm region you wish to find the indexes of
+#' @param p the ppm variable you want to find the indexes of
 #' @author Torben Kimhofer \email{torben.kimhofer@@murdoch.edu.au}
-#' @return an array containing the indexes between the lower and upper bounds
+#' @return An array containing the indexes between the lower and upper bounds
 #' @export
 #'
 #' @examples

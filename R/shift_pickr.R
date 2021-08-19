@@ -1,11 +1,11 @@
 #' Chemical Shift Picking
 #'
 #' @param x The spectrum of which you want to calculate the total area
-#' @param ppm The matched ppm variable to x
+#' @param p The matched ppm variable to x
 #' @param sh The ppm lower and upper limits defining the region you want to search in
 #' @param pm The plus/minus value you want to add or subtract from the peak. Default = 0.005
 #'
-#' @return
+#' @return An array of values mapped to defined peak
 #' @export
 #'
 #' @examples

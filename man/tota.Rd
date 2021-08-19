@@ -9,14 +9,14 @@ tota(x, p, n, sh = c(0.25, 9.5))
 \arguments{
 \item{x}{The spectrum of which you want to calculate the total area}
 
+\item{p}{The matched ppm variable to x}
+
 \item{n}{The noise estimation from the pproc}
 
 \item{sh}{The chemical shift of the region you want to calculate total area of}
-
-\item{ppm}{The matched ppm variable to x}
 }
 \value{
-
+A value of the total area estimation
 }
 \description{
 Total Area Estimation

@@ -4,13 +4,20 @@
 \alias{roundr}
 \title{Round to a Multiple of 4}
 \usage{
-roundr(n)
+roundr(n, r2 = c(4, 512, 4))
 }
 \arguments{
 \item{n}{The number you want to round}
+
+\item{r2}{Encodes the:
+\enumerate{
+\item minimum value to be rounded to
+\item maximum value to be rounded to, and
+\item the step/multiple
+}}
 }
 \value{
-
+A integer rounded to the nearest mulitple of
 }
 \description{
 Round to a Multiple of 4

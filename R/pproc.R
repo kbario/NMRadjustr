@@ -4,10 +4,9 @@
 #' @param p The ppm matched to your spectra
 #'
 #' @return This function returns:
-#' \itemize{
-#'   \item **x**: a fully preprocessed spectrum ready for it's dilution to be estimated
-#'   \item **ppm**: the matched ppm variable for the preprocessed x
-#'   \item **x_og**: the original X spectra, only processed by the NMR
+#' 1. **x**: a fully preprocessed spectrum ready for it's dilution to be estimated
+#' 2. **ppm**: the matched ppm variable for the preprocessed x
+#' 3. **x_og**: the original X spectra, only processed by the NMR
 #' @export
 #'
 #' @example

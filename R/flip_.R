@@ -1,10 +1,10 @@
 #' Spectral Flipping
 #'
 #' @param x the spectra wanting to be flipped
-#' @param ppm the match ppm variable
-#' @param shift the chemical shift used to calculate orientation
+#' @param p the match ppm variable
+#' @param sh the chemical shift used to calculate orientation
 #' @author Kyle Bario \email{kylebario1@@gmail.com}
-#' @return
+#' @return Returns a spectrum (array) with the correct orientation
 #' @export
 #'
 #' @examples

@@ -9,16 +9,16 @@ crea(x, p, n, c3 = c(3, 3.1), c4 = c(4, 4.1))
 \arguments{
 \item{x}{The spectrum of which you want to calculate the total area}
 
+\item{p}{The matched ppm variable to x}
+
 \item{n}{The noise estimation from the pproc}
 
 \item{c3}{The ppm lower and upper limits defining the creatinine signal at ppm 3}
 
 \item{c4}{The ppm lower and upper limits defining the creatinine signal at ppm 4}
-
-\item{ppm}{The matched ppm variable to x}
 }
 \value{
-
+An estimated value for the creatinine area
 }
 \description{
 Creatinine Area Estimator

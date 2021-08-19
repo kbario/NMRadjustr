@@ -9,14 +9,14 @@ shift_pickr(x, p, sh, pm = 0.005)
 \arguments{
 \item{x}{The spectrum of which you want to calculate the total area}
 
+\item{p}{The matched ppm variable to x}
+
 \item{sh}{The ppm lower and upper limits defining the region you want to search in}
 
 \item{pm}{The plus/minus value you want to add or subtract from the peak. Default = 0.005}
-
-\item{ppm}{The matched ppm variable to x}
 }
 \value{
-
+An array of values mapped to defined peak
 }
 \description{
 Chemical Shift Picking

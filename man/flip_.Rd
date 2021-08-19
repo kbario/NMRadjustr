@@ -9,12 +9,12 @@ flip_(x, p, sh)
 \arguments{
 \item{x}{the spectra wanting to be flipped}
 
-\item{ppm}{the match ppm variable}
+\item{p}{the match ppm variable}
 
-\item{shift}{the chemical shift used to calculate orientation}
+\item{sh}{the chemical shift used to calculate orientation}
 }
 \value{
-
+Returns a spectrum (array) with the correct orientation
 }
 \description{
 Spectral Flipping

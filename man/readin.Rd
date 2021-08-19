@@ -30,10 +30,6 @@ This function imports TopSpin processed NMR spectra as well as spectrometer and 
 NA
 }
 
-\examples{
-path<-system.file('extdata/',  package = 'metabom8')
-read1d(path,  exp_type=list(pulprog='noesygppr1d'))
-}
 \author{
 Torben Kimhofer \email{torben.kimhofer@murdoch.edu.au}
 }
