@@ -1,4 +1,4 @@
-#' Title
+#' NMR Number of Scans Estimator
 #'
 #' @param sig The signal
 #' @param noi The noise

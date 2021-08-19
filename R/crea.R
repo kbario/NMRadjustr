@@ -1,10 +1,10 @@
-#' Title
+#' Creatinine Area Estimator
 #'
-#' @param x
-#' @param p
-#' @param c3
-#' @param c4
-#' @param n
+#' @param x The spectrum of which you want to calculate the total area
+#' @param ppm The matched ppm variable to x
+#' @param n The noise estimation from the pproc
+#' @param c3 The ppm lower and upper limits defining the creatinine signal at ppm 3
+#' @param c4 The ppm lower and upper limits defining the creatinine signal at ppm 4
 #'
 #' @return
 #' @export
@@ -26,5 +26,3 @@ crea <- function(x, p, n, c3 = c(3,3.1), c4 = c(4,4.1)){
   e <- as.array(r<=up & r>=lo)
   return(a*2)
 }
-
-#removed indexs but not sure if i need them
