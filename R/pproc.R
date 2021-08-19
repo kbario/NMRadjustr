@@ -10,7 +10,7 @@
 #'   \item **X_OG**: the original X spectra, only processed by the NMR
 #' @export
 #'
-#' @examples
+#' @example pproc(x,p)
 
 pproc <- function(x, p){
   xf <- flip_(x, p, c(3,3.1))
