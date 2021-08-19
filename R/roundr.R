@@ -6,7 +6,7 @@
 #' 2. maximum value to be rounded to, and
 #' 3. the step/multiple
 #'
-#' @return A integer rounded to the nearest mulitple of
+#' @return A integer rounded to the nearest multiple of
 #' @export
 #'
 #' @examples

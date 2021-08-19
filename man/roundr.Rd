@@ -17,7 +17,7 @@ roundr(n, r2 = c(4, 512, 4))
 }}
 }
 \value{
-A integer rounded to the nearest mulitple of
+A integer rounded to the nearest multiple of
 }
 \description{
 Round to a Multiple of 4
