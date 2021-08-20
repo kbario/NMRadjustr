@@ -5,8 +5,9 @@
 #'
 #' @return This function returns:
 #' 1. **x**: a fully preprocessed spectrum ready for it's dilution to be estimated
-#' 2. **ppm**: the matched ppm variable for the preprocessed x
-#' 3. **x_og**: the original X spectra, only processed by the NMR
+#' 2. **p**: the matched ppm variable for the preprocessed x
+#' 3. **o**: the original X spectra that was input into the function
+#' 4. **n**: the estimated value of noise for this spectrum
 #' @export
 #'
 #' @example
