@@ -8,7 +8,7 @@
 #'
 #' @examples
 cali <- function(x, p){
-  if (!is.null(dim(X))){
+  if (!is.null(dim(x))){
     stop('This function is intended to only calibrate a single spectra')
   }
   i <- get_idx(c(-.2,.2), p)
