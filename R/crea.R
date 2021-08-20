@@ -13,7 +13,7 @@
 
 crea <- function(x, p, n, c3 = c(3,3.1), c4 = c(4,4.1)){
   x3 <- x[shift_pickr(x, p, c3, 0.005)]
-  x3[x3<n]=0
+  #x3[x3<n]=0
   a3 <- sum(x3)
   #x4 <- x[shift_pickr(x, p, c4, 0.005)]
   #x4[x4<n]=0
