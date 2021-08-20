@@ -9,8 +9,7 @@
 #'
 #' @examples
 flip_ <- function(x, p, sh){
-  idx = get_idx(sh, p)
-  s = sum(x[idx])
+  s = sum(x[get_idx(sh, p)])
   if (s<=0){
     x <- x*-1
   }
