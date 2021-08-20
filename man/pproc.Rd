@@ -15,8 +15,9 @@ pproc(x, p)
 This function returns:
 \enumerate{
 \item \strong{x}: a fully preprocessed spectrum ready for it's dilution to be estimated
-\item \strong{ppm}: the matched ppm variable for the preprocessed x
-\item \strong{x_og}: the original X spectra, only processed by the NMR
+\item \strong{p}: the matched ppm variable for the preprocessed x
+\item \strong{o}: the original X spectra that was input into the function
+\item \strong{n}: the estimated value of noise for this spectrum
 }
 }
 \description{

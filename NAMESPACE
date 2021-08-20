@@ -2,6 +2,7 @@
 
 export(adjustr)
 export(bl_)
+export(cali)
 export(citra)
 export(crea)
 export(flip_)
@@ -12,4 +13,5 @@ export(readin)
 export(roundr)
 export(shift_pickr)
 export(tota)
+importFrom(ptw,asysm)
 importFrom(stats,sd)

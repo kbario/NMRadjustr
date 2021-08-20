@@ -7,6 +7,7 @@
 #' @export
 #'
 #' @examples
+
 cali <- function(x, p){
   if (!is.null(dim(x))){
     stop('This function is intended to only calibrate a single spectra')
