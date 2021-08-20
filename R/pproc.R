@@ -16,7 +16,7 @@ pproc <- function(x, p){
   xf <- flip_(x, p, c(3,3.1))
   x_og <- xf
   xc <- cali(xf, p)
-  xr <- xf[-c(get_idx(c(min(p), 0.25), p), get_idx(c(4.6,4.9), p), get_idx(c(5.55,6), p))]
+  xr <- xc[-c(get_idx(c(min(p), 0.25), p), get_idx(c(4.6,4.9), p), get_idx(c(5.55,6), p))]
   pn <- p[-c(get_idx(c(min(p), 0.25), p), get_idx(c(4.6,4.9), p), get_idx(c(5.55,6), p), get_idx(c(9.5,max(p)), p))]
   xb <- bl_(xr)
   n <- noi_(xb,p)
