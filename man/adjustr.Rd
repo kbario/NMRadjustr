@@ -4,7 +4,7 @@
 \alias{adjustr}
 \title{NMR Number of Scans Estimator}
 \usage{
-adjustr(sig, noi, goal, ns)
+adjustr(sig, noi, goal, ns, r2)
 }
 \arguments{
 \item{sig}{The signal}
@@ -14,9 +14,11 @@ adjustr(sig, noi, goal, ns)
 \item{goal}{The target signal to noise}
 
 \item{ns}{The number of scans used to create the provided signal and noise values}
+
+\item{r2}{Arguments passed to embedded roundr function. See roundr help for details.}
 }
 \value{
-The number of scans (rounded to the nearest multiple of 4 capped at 512) necessary to achieve the goal signal to noise
+The number of scans (rounded based on the input arguments from r2) necessary to achieve the goal signal to noise
 }
 \description{
 NMR Number of Scans Estimator
