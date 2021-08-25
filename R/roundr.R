@@ -11,6 +11,6 @@
 #'
 #' @examples
 roundr <- function(n, r2 = c(4, 512, 4)){
-  sq <- seq(r2[1], r2[2], r2[3],)
+  sq <- seq(r2[1], r2[2], r2[3])
   sq[which.min(abs(sq-n))]
 }
