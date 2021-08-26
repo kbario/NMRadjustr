@@ -15,5 +15,16 @@ cali(x, p)
 A spectrum that is calibrated to tsp
 }
 \description{
-NMR spectral TSP calibration
+This function shifts the x varibale left or right so that it's TSP peak sits at 0 ppm.
+}
+\details{
+\code{cali()} finds how far away the maximum value of of x between -0.2 and 0.2 is from the ppm variable closest to 0.
+It then adds and subtracts the appropriate amount of values on either end of the spectrum so that x's TSP peak resides at 0.
+}
+\examples{
+readin(path = system.file('extdata/15', package = 'NMRadjustr'))
+xc <- cali(x, p)
+}
+\author{
+Kyle Bario \email{kylebario1@gmail.com}
 }

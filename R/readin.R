@@ -1,18 +1,15 @@
 #' @title Import 1D NMR spectra
-#' @details This function imports TopSpin processed NMR spectra as well as spectrometer and processing parameters found in files \emph{acqus} and \emph{procs}. Experiments can be filtered according to data acquisition variables using the \code{exp_type} argument: For example, to read standard 1D NMR experiments use \code{exp_type=list(exp='noesygppr1d')}. More than one argument can be provided as list element.
+#' @details This function imports TopSpin processed NMR spectra as well as spectrometer and processing parameters found in files \emph{acqus} and \emph{procs}. Experiments can be filtered according to data acquisition variables using the \code{exp_type} argument: For example, to read standard 1D NMR experiments use \code{exp_type=list(exp='noesygppr1d')}. More than one argument can be provided as list element. **Objects in the R environment with the same variable names will be overwritten.**
 #' @param path Given as a string, the path to the overarching files containing the NMR spectrum.
 #' @return
 #' The function exports the following three objects into the currently active R environment (no variable assignments needed):
-#' \itemize{
-#'   \item X, num matrix:  NMR data, spectra in rows
-#'   \item ppm, num array - chemical shift positions, length matches to columns in X
-#'   \item meta, data.frame - spectrometer metadata as extracted from individual \emph{acqus} files, row-matched to X
-#' }
-#' Objects in the R environment with the same variable names will be overwritten.
+#' 1. **x**: The NMR spectrum in an array of values matched to p
+#' 2. **p**: The column-matched ppm array of the x variable
+#' 3. **m**: The spectrometer metadata as extracted from the \emph{acqus} file, row-matched to x
 #' @export
 #' @author Torben Kimhofer \email{torben.kimhofer@@murdoch.edu.au}
 #' @examples
-#' @return
+#' readin(path = system.file('extdata/15', package = 'NMRadjustr'))
 #' @section
 
 readin <- function(path) {

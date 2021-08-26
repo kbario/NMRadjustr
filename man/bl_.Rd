@@ -13,5 +13,16 @@ bl_(x)
 an x with a corrected baseline
 }
 \description{
-Baseline Correction
+\code{bl_()} removes the arched baseline from an NMR spectrum making the analysis more robust
+}
+\details{
+NMR spectra often have broad signals produced by proteins within a sample that span a large portion of the ppm axis. These broad signals interfere with the analysis of specific peaks. By removing it, the anaylsis is more robust.
+This is achieved by calculating the trend of the spectrum using \code{ptw::asysm()} and then subtracts that from the spectrum's values.
+}
+\examples{
+readin(path = system.file('extdata/15', package = 'NMRadjustr'))
+xb <- bl_(x)
+}
+\author{
+Kyle Bario \email{kylebario1@gmail.com}
 }

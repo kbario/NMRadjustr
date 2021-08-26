@@ -21,5 +21,17 @@ crea(x, p, n, c3 = c(3, 3.1), c4 = c(4, 4.1))
 An estimated value for the creatinine area
 }
 \description{
-Creatinine Area Estimator
+Estimates the area of the creatinine signal
+}
+\details{
+\code{crea()} finds the ppm values between the upper and lower bounds provided by the sh parameter.
+Then it removes all values below the estimated noise level provided by \code{pproc()} to increase accuracy.
+Finally the remaining values are summed and is the value returned by the function.
+}
+\examples{
+data(x,p,n)
+cr <- crea(x, p, n)
+}
+\author{
+Kyle Bario \email{kylebario1@gmail.com}
 }

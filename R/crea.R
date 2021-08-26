@@ -1,4 +1,9 @@
-#' Creatinine Area Estimator
+#' @title Creatinine Area Estimator
+#' @description Estimates the area of the creatinine signal
+#'
+#' @details `crea()` finds the ppm values between the upper and lower bounds provided by the sh parameter.
+#' Then it removes all values below the estimated noise level provided by `pproc()` to increase accuracy.
+#' Finally the remaining values are summed and is the value returned by the function.
 #'
 #' @param x The spectrum of which you want to calculate the total area
 #' @param p The matched ppm variable to x
@@ -9,7 +14,11 @@
 #' @return An estimated value for the creatinine area
 #' @export
 #'
+#' @author Kyle Bario \email{kylebario1@@gmail.com}
+#'
 #' @examples
+#' data(x,p,n)
+#' cr <- crea(x, p, n)
 
 crea <- function(x, p, n, c3 = c(3,3.1), c4 = c(4,4.1)){
   x3 <- x[shift_pickr(x, p, c3, 0.005)]

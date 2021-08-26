@@ -15,8 +15,19 @@ get_idx(r, p)
 An array containing the indexes between the lower and upper bounds
 }
 \description{
-Get ppm indexes
+\code{get_idx()} finds which ppm elements are within certain bounds provided in the argument 'r'.
+}
+\details{
+The ppm variable matched to a spectrum indicates at what frequency the peak resides. To look at x values between certain frequencies, ask \code{get_idx()} to find what columns of x are between the frequency values.
+For instance, to find the values of creatinine (which resides between ppm 3 and 3.1) in your x variable, input 3 and 3.1 into \code{get_idx()} and provide the ppm variable p.
+From there, \code{get_idx()} asks what ppm values are both above the lower ppm of 3 and below the upper ppm of 3.1. These ppm values are then returned as the output of \code{get_idx()}.
+}
+\examples{
+data(p)
+idx <- get_idx(r = c(3,3.1), p)
 }
 \author{
 Torben Kimhofer \email{torben.kimhofer@murdoch.edu.au}
+
+Kyle Bario \email{kylebario1@gmail.com}
 }

@@ -11,13 +11,21 @@ flip_(x, p, sh)
 
 \item{p}{the match ppm variable}
 
-\item{sh}{the chemical shift used to calculate orientation}
+\item{sh}{the chemical shift used to calculate orientation given as the upper and lower ppm bounds}
 }
 \value{
 Returns a spectrum (array) with the correct orientation
 }
 \description{
-Spectral Flipping
+\code{flip_()} re-orientates/flips the spectrum on the x axis so that the peaks are pointing the correct way.
+}
+\details{
+\code{flip_()} looks at the chemical shift provided by the sh variable and sums the x values in that area.
+It then determines if the sum of this area has a positive or negative sign (indicating if in that area, the peak is pointing in the positive or negative direction). If it is in the negative direction, the entire spectrum is mulitplied by -1 and returned.
+}
+\examples{
+readin(path = system.file('extdata/15', package = 'NMRadjustr'))
+xf <- flip_(x, p, sh = c(3,3.1))
 }
 \author{
 Kyle Bario \email{kylebario1@gmail.com}
